@@ -1,1 +1,441 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with TVD landing page.">
+    <meta name="author" content="Chen Li">
+    <title>TencentARC-TVD</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Tencent ARC & Tencent Video</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Composition</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Benchmark</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Reference</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+<!--                <li class="item ml-md-3">-->
+<!--                    <a href="components.html" class="btn btn-primary">Components</a>-->
+<!--                </li>-->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">Welcome to PTVD</span>
+            </h1>
+            <p class="header-subtitle">A Large-Scale Multimodal Plot-Oriented Story Understanding Dataset</p>
+
+            <button class="btn btn-primary">Visit Our Paper</button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/fig_banner_tvd.png" class="about-img"
+                         alt="Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">What is PTVD ?</p>
+                    <h2 class="section-title mb-3">About PTVD</h2>
+                    <p>
+                        Art forms such as movies and television (TV) dramas are reflections of the real world, which
+                        have attracted much attention from the multimodal learning community recently. However,
+                        existing corpora in this domain share three limitations: <b>i.</b> annotated in a scene-oriented
+                        fashion, they ignore the coherence within plots; <b>ii.</b> their text lacks empathy and seldom
+                        mentions situational context; <b>iii.</b> their video clips fail to cover long-form relationship due to
+                        short duration. To address these fundamental issues, using 1,106 TV drama episodes and 24,875 informative
+                        plot-focused sentences written by professionals, with the help of 449 human annotators, we
+                        constructed PTVD, the first plot-oriented multimodal dataset in the cinema domain.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump()">Download PTVD</button>
+                    <script>function jump(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}</script>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What does PTVD have ?</p>
+            <h6 class="section-title mb-6">Dataset Composition</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/fig_vision.png" class="portfolio-card-img"
+                             alt="Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h3>Vision</h3>
+                                    <p class="font-weight-normal">Including videos and images</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/fig_text.png" class="img-responsive rounded"
+                             alt="Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h3>Text</h3>
+                                    <p class="font-weight-normal">Including plot texts, subtitles and bullet screen comments</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/fig_metadata.png" class="img-responsive rounded"
+                             alt="Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h3>Metadata</h3>
+                                    <p class="font-weight-normal">Including lots of structured information</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">What does data look like ?</p>
+            <h6 class="section-title mb-6">Data Example</h6>
+            <!-- row -->
+            <img src="assets/imgs/fig_overall.png" width=100% alt="Landing page">
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Vision</h6>
+                        <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/fig_vision_example.jpg" class="portfolio-card-img" alt="Landing page">
+                        </a>
+<!--                        <div class="pricing-card-list">-->
+                            <p align="left"> </p>
+                            <p align="left"><b>Description</b>: TVD takes screenshots of the video with an interval of one second and provides CLIP-based features.</p>
+<!--                        </div>-->
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Text</h6>
+                        <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/fig_text_example.png" class="portfolio-card-img" alt="Landing page">
+                        </a>
+                         <p align="left"> </p>
+                         <p align="left"><b>Description</b>: TVD includes three types of text data: subtitles, plot and bullet screen comment. The subtitle is extracted from video, the plot text is crawlered from the network, and the bullet screen comment is obtained from Tencent video website.</p>
+                    </div>
+                    <div class="example"><a href="#" class="btn btn-primary mt-3 pricing-card-btn" onclick="jump_1()">Example file for each modality</a></div>
+                    <script>function jump_1(){window.open("https://github.com/palchenli/TVD/tree/main/example")}</script>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Metadata</h6>
+                        <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/metadata.png" class="portfolio-card-img" alt="Landing page">
+                        </a>
+                         <p align="left">&nbsp;</p>
+                         <p align="left"><b>Description</b>: TVD contains a large amount of metadata from Tencent video website, e.g., categories, tags, popularity, actors and so on.</p>
+                    </div>
+                </div>
+
+            </div><!-- end of pricing wrapper -->
+        </div> <!-- end of container -->
+
+<!--        <style>.example{position: relative;-->
+<!--        top: 50%;-->
+<!--        left: 48%}</style>-->
+
+    </section><!-- end of pricing section -->
+
+
+
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What can PTVD Do ?</p>
+            <h6 class="section-title mb-6">Tasks</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/classification.png"
+                                alt="Landing page"
+                                class="icon">
+                            <h6 class="title">CLassification</h6>
+                            <p class="subtitle">Giving multiple genre tags for a complete plot clip based on parallel multimodal data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/retrieval.png"
+                                alt="Landing page"
+                                class="icon">
+                            <h6 class="title">Retrieval</h6>
+                            <p class="subtitle">Achieving cross-modal data (e.g., txt-img, txt-vid) matching based on a complete plot.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/generation.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Generation</h6>
+                            <p class="subtitle">Generating corresponding high-quality textual plot description for a given plot video clip.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Others</h6>
+                            <p class="subtitle">There are tons of tasks that can be done based on TVD, e.g., plot reordering, plot distinguish, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- section -->
+<!--    <section class="section-sm bg-primary">-->
+<!--        &lt;!&ndash; container &ndash;&gt;-->
+<!--        <div class="container text-center text-sm-left">-->
+<!--            &lt;!&ndash; row &ndash;&gt;-->
+<!--            <div class="row align-items-center">-->
+<!--                <div class="col-sm offset-md-1 mb-4 mb-md-0">-->
+<!--                    <h6 class="title text-light">Want to work with me?</h6>-->
+<!--                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm offset-sm-2 offset-md-3">-->
+<!--                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>-->
+<!--                </div>-->
+<!--            </div> &lt;!&ndash; end of row &ndash;&gt;-->
+<!--        </div> &lt;!&ndash; end of container &ndash;&gt;-->
+<!--    </section> &lt;!&ndash; end of section &ndash;&gt;-->
+
+
+
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle">How to use PTVD?</p>
+            <h6 class="section-title mb-6">Baseline</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/fig_framework.png" class="blog-card-img"
+                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h6 class="blog-card-title">Benchmark</h6>
+
+<!--                        <p class="blog-card-caption">-->
+<!--                            <a href="#">By: Admin</a>-->
+<!--                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>-->
+<!--                            <a href="#"><i class="ti-comment"></i> 123</a>-->
+<!--                        </p>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit-->
+<!--                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium-->
+<!--                            neque numquam mollitia modi quasi distinctio.</p>-->
+
+<!--                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>-->
+<!--                        </p>-->
+<!--                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis-->
+<!--                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>-->
+
+                        As shown in this figure, aiming to serve as a future baseline, our algorithm first adopts the most popular text encoder, BERT, for text input, and a very promising vision encoder, ViT, for image and video.
+                    The vanilla <b>METER</b> does not support video input, so we employ the approach and add a signal converter which uniformly samples four frames from each clip. Then, the encoded features are fed to two separate co-attention fusion modules, which respectively produce embeddings for image-text and video-text multimodal learning.
+
+                        <a href="#" class="blog-card-link" onclick="jump_1()">Refer to details and code <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+<!--            &lt;!&ndash; blog-wrapper &ndash;&gt;-->
+<!--            <div class="blog-card">-->
+<!--                <div class="blog-card-header">-->
+<!--                    <img src="assets/imgs/img-2.jpg" class="blog-card-img"-->
+<!--                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">-->
+<!--                </div>-->
+<!--                <div class="blog-card-body">-->
+<!--                    <h5 class="blog-card-title">Explicabo illo</h6>-->
+
+<!--                        <p class="blog-card-caption">-->
+<!--                            <a href="#">By: Admin</a>-->
+<!--                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>-->
+<!--                            <a href="#"><i class="ti-comment"></i> 264</a>-->
+<!--                        </p>-->
+
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,-->
+<!--                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro-->
+<!--                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto-->
+<!--                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?-->
+<!--                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non-->
+<!--                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus-->
+<!--                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>-->
+
+<!--                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>-->
+<!--                </div>-->
+<!--            </div>&lt;!&ndash; end of blog wrapper &ndash;&gt;-->
+
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+
+        <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">Reference</p>
+            <h6 class="section-title mb-6">Bibtex</h6>
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/bibtex.png" class="testimonial-card-img"
+                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">{</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@article{li2023taggpt,</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={TagGPT: Large Language Models are Zero-shot Multimodal Taggers},</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={====================================================================},&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2304.03022},</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2023}</br>
+                            }</p>
+<!--                            <h6 class="testimonial-card-title">Emily Reb</h6>-->
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="col-md-6">-->
+<!--                    <div class="testimonial-card">-->
+<!--                        <div class="testimonial-card-img-holder">-->
+<!--                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"-->
+<!--                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">-->
+<!--                        </div>-->
+<!--                        <div class="testimonial-card-body">-->
+<!--                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing-->
+<!--                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis-->
+<!--                                adipisci nihil.</p>-->
+<!--                            <h6 class="testimonial-card-title">Emily Reb</h6>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Us</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="https://arc.tencent.com/en/index">ARC LAB</a> Distribution
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>-->
+                <a href="javascript:void(0)" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
