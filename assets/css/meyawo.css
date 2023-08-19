@@ -12232,3 +12232,54 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+ /* 遮罩层样式 */
+.overlay-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none; /* 默认隐藏 */
+}
+
+/* 弹窗样式 */
+.popup-1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none; /* 默认隐藏 */
+}
+label-1 {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="text"], select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+}
+
+select option {
+  color: #555;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #695aa6;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #695aa6;
+}
