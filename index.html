@@ -87,8 +87,30 @@
                         plot-focused sentences written by professionals, with the help of 449 human annotators, we
                         constructed PTVD, the first plot-oriented multimodal dataset in the cinema domain.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump()">Download PTVD</button>
-                    <script>function jump(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}</script>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" id="openbtn">Download PTVD</button>
+                    <div class="overlay-1" id="overlay-1"></div>
+                    <div class="popup-1" id="popup-1">
+                    <form>
+                        <label>Notices: Click the "Download" button to accept the following two requirements by default, otherwise please click "Leave".</label>
+                        <label>1. *Distributing extracted features of copyrighted videos for scholar purposes* is permitted in your region (e.g, the local regulations support the fair use doctrine)</label>
+                        <label>2. The license of PTVD is CC BY-NC-SA 4.0.</label>
+                        <br><br>
+                        <button id="down" onclick="jump()">Download</button>
+                        <button id="closebtn()">Leave</button>
+                    </form></div>
+                    <script>
+                        const openbtn=document.getElementById('openbtn');
+                        const closebtn=document.getElementById('closebtn');
+                        const popup_1=document.getElementById('popup-1');
+                        const overlay_1=document.getElementById('overlay-1');
+                        openbtn.addEventListener('click', function(){
+                            popup_1.style.display='block';
+                            overlay_1.style.display='block';
+                        })
+                        function jump(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}
+                    </script>
+<!--                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump()">Download PTVD</button>-->
+<!--                    <script>function jump(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}</script>-->
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -157,7 +179,7 @@
                         </a>
 <!--                        <div class="pricing-card-list">-->
                             <p align="left"> </p>
-                            <p align="left"><b>Description</b>: TVD takes screenshots of the video with an interval of one second and provides CLIP-based features.</p>
+                            <p align="left"><b>Description</b>: PTVD takes screenshots of the video with an interval of one second and provides CLIP-based features.</p>
 <!--                        </div>-->
                     </div>
                 </div>
@@ -168,7 +190,7 @@
                         <img src="assets/imgs/fig_text_example.png" class="portfolio-card-img" alt="Landing page">
                         </a>
                          <p align="left"> </p>
-                         <p align="left"><b>Description</b>: TVD includes three types of text data: subtitles, plot and bullet screen comment. The subtitle is extracted from video, the plot text is crawlered from the network, and the bullet screen comment is obtained from Tencent video website.</p>
+                         <p align="left"><b>Description</b>: PTVD includes three types of text data: subtitles, plot and bullet screen comment. The subtitle is extracted from video, the plot text is crawlered from the network, and the bullet screen comment is obtained from Tencent video website.</p>
                     </div>
                     <div class="example"><a href="#" class="btn btn-primary mt-3 pricing-card-btn" onclick="jump_1()">Example file for each modality</a></div>
                     <script>function jump_1(){window.open("https://github.com/palchenli/TVD/tree/main/example")}</script>
@@ -180,11 +202,12 @@
                         <img src="assets/imgs/metadata.png" class="portfolio-card-img" alt="Landing page">
                         </a>
                          <p align="left">&nbsp;</p>
-                         <p align="left"><b>Description</b>: TVD contains a large amount of metadata from Tencent video website, e.g., categories, tags, popularity, actors and so on.</p>
+                         <p align="left"><b>Description</b>: PTVD contains a large amount of metadata from Tencent video website, e.g., categories, tags, popularity, actors and so on.</p>
                     </div>
                 </div>
 
             </div><!-- end of pricing wrapper -->
+            <p class="section-subtitle">For features based on the new visual encoder, please contact the author via email or github issue.</p>
         </div> <!-- end of container -->
 
 <!--        <style>.example{position: relative;-->
@@ -357,6 +380,7 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Chen Li, Xutan Peng, Teng Wang, Yixiao Ge, Mengyang Liu, Xuyuan Xu, Yexin Wang, Ying Shan},
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
 <!--                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2304.03022},</br>-->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eprint={2306.14644},</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2023}</br>
                             }</p>
 <!--                            <h6 class="testimonial-card-title">Emily Reb</h6>-->
